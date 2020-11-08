@@ -1,0 +1,8 @@
+<h3>Komentarai</h3><%# naudoju cikla ir taip gaunu visus komentarus %>
+<% @post.comments.each do |comment| %>
+<div class="alert alert-light">   
+    <p><strong><%= comment.username %></strong>: <%=comment.body%>
+        <%= link_to '[x]', [comment.post, comment], method: :delete, data: {confirm: 'Ar tikrai norite ištrinti?'}%>
+    </p>
+</div>
+<%end%>
