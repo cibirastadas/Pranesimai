@@ -1,0 +1,19 @@
+<%if @msg=="nil" then%>
+<div>
+<h2 class="w3-text-red">Naudotojas nerastas</h2>
+</div>
+<%end%>
+<div class="w-50 p-3">
+<h2>Prisijungimas</h2>
+    <form action="login_user" method="post" class="d-flex flex-column w-75">
+        <label class="w3-text-blue"><b>El. Paštas</b></label>
+        <input name="email" class="w3-input w3-border" type="text" required>
+        <label class="w3-text-blue"><b>Slaptazodis</b></label>
+        <input name="password" class="w3-input w3-border" type="password" required><br>
+        <button type ="submit" class="btn btn-primary w-50">Prisijungti</button>
+    </form>
+</div>
+
+
+
+
